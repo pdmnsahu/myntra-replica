@@ -1,0 +1,14 @@
+{
+  "name": "drape",
+  "version": "1.0.0",
+  "description": "Drape - Fashion E-commerce Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
+    "seed": "node server/db/seed.js",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
